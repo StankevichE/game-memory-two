@@ -9,12 +9,15 @@ const boardStyle ={
     display: "grid",
     gridTemplateColumns: "auto auto auto auto"
 }
+
+
 const Board = (props) => {
     return (
         <div style={boardStyle}>
             {props.board.map((el)=>
             <Square key={el.id}
             card={el}
+                   openCard={props.openCard}
                 />)}
 
         </div>

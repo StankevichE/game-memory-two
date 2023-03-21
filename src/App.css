@@ -11,8 +11,51 @@
   font-weight: bolder;
   font-size: 2.8em;
   color: #36846b;
+    animation: flicker 2s infinite alternate;
 
 }
+.StyleNeon {
+  font-family: cursive;
+  font-weight: bolder;
+    font-size: 2.0em;
+    color: #acdbcc;
+    text-shadow: 0 0 7px #31d4f4,
+    0 0 10px #6fd8e9,
+    0 0 21px #b4edf7,
+    0 0 42px #037029,
+    0 0 82px #60e948,
+    0 0 92px #fff,
+    0 0 102px #fff,
+    0 0 151px #fff;
+}
+
+.neonText {
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 1.4em;
+    color: #acdbcc;
+    animation: flicker 3,5s infinite alternate;
+}
+@keyframes flicker {
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        text-shadow: 0 0 7px #31d4f4,
+        0 0 10px #6fd8e9,
+        0 0 21px #b4edf7,
+        0 0 42px #a7ebbf,
+        0 0 82px #ddf0da,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 151px #fff;
+
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
 
 body {
   background-image: url("https://7themes.su/_ph/28/200069184.jpg?1675028609");
